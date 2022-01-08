@@ -21,6 +21,6 @@ jobs:
       - name: Build the stack
         run: docker-compose up -d --build
       - name: Test
-        run: docker-compose exec users python manage.py test
+        run: docker-compose exec -T users python manage.py test
       - name: black
-        run: docker-compose exec users black --check project
+        run: docker-compose exec -T users black --check project
