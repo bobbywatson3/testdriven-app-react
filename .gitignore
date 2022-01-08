@@ -1,3 +1,8 @@
+.vscode/
+.DS_Store
+*.tgz
+build
+
 __pycache__
 services/users/htmlcov
 
