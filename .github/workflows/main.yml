@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       COMPOSE_INTERACTIVE_NO_CLI: "1"
+      REACT_APP_USERS_SERVICE_URL: "http://127.0.0.1"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
