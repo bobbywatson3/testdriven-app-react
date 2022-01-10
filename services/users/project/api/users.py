@@ -24,7 +24,7 @@ class UsersList(Resource):
             return response_object, 400
         username = post_data.get("username")
         email = post_data.get("email")
-        password = post_data.get('password')
+        password = post_data.get("password")
         try:
             user = User.query.filter_by(email=email).first()
             if not user:
